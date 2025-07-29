@@ -1,160 +1,756 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Bellér Zoltán Ezra - Portfólió </title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-<!--body-->
-<header class="header">
-    <a href="#" class="logo">Bellér Zoltán Ezra - Portfólió</a>
-    <a href="eng.html" class="btn lang-btn">EN | HU</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-    <nav class="navbar">
-        <a href="#home" class="active">Főoldal</a>
-        <a href="#about">Rólam</a>
-        <a href="#services">Projektek</a>
-        <a href="#portfolio">Tapasztalatok</a>
-        <a href="#contact">Kapcsolat</a>
-    </nav>
-</header>
+<html lang="en" class="hydrated">
+<head>
+    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellér Zoltán Ezra - Portfólió</title>
 
+    <link rel="shortcut icon" href="./image/logo.ico" type="image/x-icon">
 
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Helló!:) A nevem:</h3>
-                <h1>Bellér Zoltán Ezra</h1>
-                <h3>Foglalkozásom: <span class="multiple-text"></span></h3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/zoltan.gonczi.12/"><i class='bx bxl-facebook-square'></i></a>
-                    <a href="#" onclick="navigator.clipboard.writeText('bellerzoltanezra@gmail.com'); alert('Email cím kimásolva!'); return false;">
-                        <i class='bx bxs-envelope'></i>
-                      </a>
-                    <a href="https://www.instagram.com/beller_zoltan_ezra"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.linkedin.com/in/zolt%C3%A1n-bell%C3%A9r-9748152a3/"><i class='bx bxl-linkedin-square' ></i></a>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <aside class="sidebar" data-sidebar="">
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./image/bze.png" alt="Bellér Zoltán Ezra" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Bellér Zoltán Ezra">Bellér Zoltán Ezra</h1>
+
+                    <p class="title">Fejlesztő | AI & webfejlesztés</p>
                 </div>
-                <a href="beller-zoltan-ezra-oneletrajz.pdf" class="btn" target="_blank">Önéletrajz megtekintése</a>
-            </div>
-            <div class="home-img">
-                <img src="image/bze.png" alt="" style="max-width: 100%; max-height: 500px; width: auto; height: auto; display: block; margin: 0 auto;">
-            </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about-content">
-                <h2 class="heading"><span>Rólam</span></h2>
 
-                <h3 style="color: var(--main-color);">Vállalkozásaim és Szakmai Tevékenységem</h3>
-                <p>Vállalkozói tevékenységemet 2025 áprilisában kezdtem meg hivatalosan egyéni vállalkozóként. 
-                Jelenleg két fő projekten dolgozom, amelyekben saját ötleteimet és készségeimet egyaránt kamatoztatom.</p>
-                <ul>
-                  <p>Senkisem EV:Saját ruhamárkám, amelyben a vizuális tervezéstől kezdve a gyártási folyamatokon át a digitális marketingig minden lépést magam irányítok. 
-                  A márka célja egyedi, igényes design termékek létrehozása, amelyek vizuálisan is értéket képviselnek.</li>
-                  <p>Signaler.hu:  Egy tőzsdei indikátorokat és kereskedési segédeszközöket kínáló weboldal, amelyet én tervezek és fejlesztek. 
-                  A célom egy olyan platform létrehozása, amely valódi segítséget nyújt a piaci döntések meghozatalához. 
-                  A programozás, a pénzügyi tudás és az üzleti szemlélet ebben a projektben egyesül.</li>
+                <button class="info_more-btn" data-sidebar-btn="">
+                    <span>Kapcsolat</span>
+
+                    <ion-icon name="chevron-down" role="img" class="md hydrated" aria-label="chevron down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:bellerzoltanezra@gmail.com?subject=Contact%20from%20Portfolio" class="contact-link">bellerzoltanezra@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline" role="img" class="md hydrated" aria-label="phone portrait outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Tel.:</p>
+
+                            <a href="tel:+923218731806" class="contact-link">+36 30 798 5995</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline" role="img" class="md hydrated" aria-label="calendar outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Születési Idő</p>
+
+                            <time datetime="2000-08-08">2000. augusztus 8.</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Lakhely</p>
+
+                            <address>Magyarország, Ózd | Budapest</address>
+                        </div>
+
+                    </li>
+
                 </ul>
 
-                <p>2025-től fejlesztőként dolgozom az aitrainer.hu csapatában, ahol innovatív mesterséges intelligencia alapú üzleti megoldásokat fejlesztünk. Feladataim közé tartozik AI-alapú chatbotok, MCP Szerverek, adatfeldolgozó és folyamat-optimalizáló eszközök fejlesztése, valamint AI integrációk megvalósítása különböző üzleti rendszerekhez.
+                <div class="separator"></div>
 
-Ez a munka lehetőséget ad a legújabb mesterséges intelligencia technológiák gyakorlati alkalmazására és továbbfejlesztésére, miközben szélesíti a programozási, rendszerszervezési és üzleti ismereteimet.</p>
-                <h3 style="color: var(--main-color);">Programozás és technológia</h3>
-                <p>2024 eleje óta célzottan fejlesztem programozási ismereteimet, önálló tanulással párhuzamosan az egyetemi tanulmányaimmal. 
-                Elsőként HTML, CSS, SCSS és C++ területeken szereztem alapokat, jelenleg pedig Java, JavaScript, Python, és SQL nyelvek junior szintű elsajátítására fókuszálok. 
-                A tanulás során nemcsak technikai tudásra törekszem, hanem problémamegoldási készségeim és rendszerszemléletem fejlesztésére is.</p>
-              
-                <h3 style="color: var(--main-color);">Pénzügyi piacok és tőzsde</h3>
-                <p>2020 óta aktívan foglalkozom tőzsdei kereskedéssel, kezdetben hobbiként, mára azonban rendszerszintű megközelítéssel. 
-                Érdeklődésem középpontjában a pénzügyi piacok működésének mélyebb megértése, a technikai elemzés és befektetési stratégiák állnak. 
-                Hosszú távú célom, hogy saját eszközökre és szoftveres megoldásokra alapozva építsem és kezeljem a portfóliómat.</p>
-              
-                <h3 style="color: var(--main-color);">Önfejlesztés és személyes készségek</h3>
-                <p>A fejlődés számomra átfogó fogalom: nemcsak szellemi, hanem fizikai síkon is fontos. 
-                Éveken át foglalkoztam harcművészetekkel, ami erősítette a kitartásomat és koncentrációs képességemet. 
-                Emellett rendszeresen olvasok – a szakmai anyagoktól az önismereti témákig –, mert hiszem, hogy a tudás sokféle forrásból épül.</p>
-              
-                <h3 style="color: var(--main-color);">Készségek</h3>
-                <p>Az informatikai tudásom mellett erősségeim közé tartozik a vizuális tervezés, a digitális marketing (kiemelten közösségi média) ismerete, valamint a tudatos, higgadt kommunikáció. 
-                Ezeket a készségeket nemcsak tanulmányaim és projektjeim során, hanem a munkatapasztalataimban is tudtam kamatoztatni.</p>
-              
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/zoltan.gonczi.12/" class="social-link">
+                            <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/beller_zoltan_ezra" class="social-link">
+                            <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://linktr.ee/senkisem" class="social-link">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
-        </section>
-        <section class="services"id="services">
-            <h2 class="heading"><span>Projektek</span></h2>
 
-            <div class="services-container">
-                <div class="services-box">
-                    <i class='bx bx-candles'></i>
-                    <h3> Signaler   </h3>
+        </aside>
+
+        <div class="main-content">
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="about">Rólam</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="resume">Önéletrajz</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="blog">Projektek</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link="contact">Kapcsolat</button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <article class="about" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">Rólam</h2>
+                </header>
+
+                <section class="about-text">
                     <p>
-                        Webalapú szoftver, amely technikai indikátorokat kínál tőzsdei kereskedők számára. A cél: pontosabb piaci döntések támogatása saját fejlesztésű eszközökkel.</p>
-                    <a href="https://signaler.onrender.com"class="btn">Megtekintés</a>
+                        Bellér Zoltán Ezra vagyok – webfejlesztő, vizuális gondolkodó és vállalkozó. A kód és a design számomra nem különálló dolgok, hanem eszközök arra, hogy értékes és működő digitális élményeket hozzak létre. Saját projekteken keresztül tanultam bele a fejlesztésbe, és azóta is rendszerben gondolkodva, üzleti szemlélettel dolgozom. Fontos számomra, hogy amit építek, ne csak látványos legyen, hanem funkcionálisan is helytálljon. Hiszek a tiszta kommunikációban, az átgondolt struktúrákban és a folyamatos fejlődésben – akár egy új projekt, akár egy hosszú távú együttműködés során.
+                    </p>
+
+                    <p>
+                        Tudásom és tapasztalatom kiterjed a vizuális tervezésre, a felhasználói élmény (UX) optimalizálására és a keresőoptimalizálásra (SEO), hogy weboldalad ne csak jól nézzen ki, hanem könnyen megtalálható is legyen a Google-ben. Hiszek a személyre szabott megoldásokban és a folyamatos kommunikációban, hogy a végeredmény pontosan megfeleljen az elképzeléseidnek.
+                    </p>
+                </section>
+
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">Mivel foglalkozom?</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="shirt-outline" size="large"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Senkisem EV</h4>
+                                <p class="service-item-text">
+                                    Saját ruhamárkám, a Senkisem EV vizuális tervezését, gyártási folyamatait és digitális marketingjét egyaránt irányítom.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="trending-up-outline" size="large"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Signaler</h4>
+                                <p class="service-item-text">
+                                    A Signaler weboldalt tőzsdei indikátorokkal és kereskedési segédeszközökkel tervezem és fejlesztem, valós segítséget nyújtva a piaci döntésekhez.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="people-outline" size="large"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Linkfluencer</h4>
+                                <p class="service-item-text">
+                                    A Linkfluencer egy marketing affiliate platform, amely cégeket és influencereket kapcsol össze.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="bulb-outline" size="large"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">AI Trainer</h4>
+                                <p class="service-item-text">
+                                    Alvállalkozóként veszek részt az aitrainer.hu csapatában, ahol innovatív, mesterséges intelligencia alapú üzleti megoldásokat, többek között AI-alapú chatbotokat és adatfeldolgozó eszközöket fejlesztek.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <section class="testimonials">
+
+                    <h3 class="h3 testimonials-title">Skillek</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item="">
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./image/frontend.jpg" alt="Frontend" width="60" data-testimonials-avatar="">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title="">Frontend</h4>
+
+                                <div class="testimonials-text" data-testimonials-text="">
+                                    <p>
+                                        HTML, CSS, JavaScript, SCSS,
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item="">
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./image/backend.png" alt="Backend" width="60" data-testimonials-avatar="">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title="">Backend</h4>
+
+                                <div class="testimonials-text" data-testimonials-text="">
+                                    <p>
+                                        Python, Node.JS, MongoDB, SQL, PHP, Pine Script
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item="">
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./image/mcp.png" alt="Keretrendszerek" width="60" data-testimonials-avatar="">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title="">Technológiák</h4>
+
+                                <div class="testimonials-text" data-testimonials-text="">
+                                    <p>
+                                        MCP Szerverek, Docker, Express, React
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item="">
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./image/design.jpg" alt="Design" width="60" data-testimonials-avatar="">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title="">Kreatív Design</h4>
+
+                                <div class="testimonials-text" data-testimonials-text="">
+                                    <p>
+                                        Adobe Photoshop, Illustrator, Canva
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <div class="modal-container" data-modal-container="">
+
+                    <div class="overlay" data-overlay=""></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn="">
+                            <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+                        </button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-avatar="">
+                            </figure>
+
+                            <h4 class="h3 modal-title" data-modal-title=""></h4>
+                        </div>
+
+                        <div class="modal-content" data-modal-text="">
+                            <p></p>
+                        </div>
+
+                    </section>
+
                 </div>
+
+            </article>
+
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Önéletrajz</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Tanulmányok</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Debreceni Egyetem – Egészségügyi szervező szak (BsC)</h4>
+
+                            <span>2021 — 2025</span>
+
+                            <p class="timeline-text">
+                                Habár az egyetemi tanulmányaimat szüneteltetem 2024 óta, mégis számos szakmai készségre és tudásra tettem szert egyetemi éveim alatt.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Programozási ismeretek fejlesztése</h4>
+                            <span>2024 - napjaink</span>
+                            <p class="timeline-text">
+                                Célzottan fejlesztem programozási ismereteimet, önálló tanulással. A tanulás során nemcsak technikai tudásra törekszem, hanem problémamegoldási készségeim és rendszerszemléletem fejlesztésére is.
+                            </p>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Munkatapasztalatok</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Raiffeisen Bank Zrt – Kockázatkezelő gyakornok</h4>
+
+                            <span>2021 – 2022</span>
+
+                            <p class="timeline-text">
+                                Betekintést nyertem a banki kockázatelemzés világába. A gyakornoki pozíció során pénzügyi jelentések értelmezésében, kockázatértékelésben és adatbázis-kezelésben szereztem gyakorlatot.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title"> SilkRoad Models Agency LLC & Millions Agency Kft – Menedzser és Traffic Manager </h4>
+
+                            <span>2023 – 2025</span>
+
+                            <p class="timeline-text">
+                                Menedzserként a Magyar leányvállalatuknál, majd már a Social Media Marketing-el foglalkozó Amerikai cégnél dolgoztam Traffic Manager pozícióban. Főként közösségi média tevékenységben, csapatmenedzsmentben (30+ fő koordinálása) és kreatív irányításban vettem részt, több influencer projektet koordinálva.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title"> BossTech AI Solutions Kft - AI Trainer</h4>
+
+                            <span>2025</span>
+
+                            <p class="timeline-text">
+                                2025-től fejlesztőként (alvállalkozó) dolgozom az aitrainer.hu csapatában, ahol innovatív mesterséges intelligencia alapú üzleti megoldásokat fejlesztünk. Feladataim közé tartozik AI-alapú chatbotok, MCP Szerverek, adatfeldolgozó és folyamat-optimalizáló eszközök fejlesztése, valamint AI integrációk megvalósítása különböző üzleti rendszerekhez. Ez a munka lehetőséget ad a legújabb mesterséges intelligencia technológiák gyakorlati alkalmazására és továbbfejlesztésére, miközben szélesíti a programozási, rendszerszervezési és üzleti ismereteimet.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Egyéni Vállalkozás </h4>
+
+                            <span>2025 </span>
+
+                            <p class="timeline-text">
+                                Egyéni vállalkozásom (Bellér Zoltán Ezra | Senkisem EV) keretein belül több különböző webes platformon és iparágban tevékenykedem az online térben. Szabadidőmben webfejlesztői szolgáltatásokat nyújtok projektalapon.
+                            </p>
+
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">Készségeim</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Programozás - Webfejlesztés</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Digitális marketing (kiemelten közösségi média)</h5>
+                                <data value="85">85%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Vizuális tervezés - UI|UX</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Pénzügyi piacok - Tőzsdei ismeretek</h5>
+                                <data value="75">75%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 75%;"></div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+            <article class="blog" data-page="blog">
+
+                <header>
+                    <h2 class="h2 article-title">Projektek</h2>
+                </header>
+
+                <section class="blog-posts">
+
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="https://senkisem.hu">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./image/senkisem.png" alt="Senkisem" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">senkisem.hu</p>
+
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Senkisem</h3>
+
+                                    <p class="blog-text">
+                                        A Senkisem nem akar rád aggatni semmit. Nem próbál „valamivé” tenni. Ez a név azoknak szól, akik valaha is úgy érezték, hogy kilógnak, láthatatlanok, nem illenek a képbe.
+                                        De a Senkisem nem ürességet jelent – épp ellenkezőleg: egy helyet, amit te töltesz meg tartalommal. A sajátoddal.
+                                        Mert nem vagy senki. Te vagy az, aki nem akar valaki más lenni. És ez az igazi erő.
+                                        Ez nem divat. Ez nem trend. Ez nem követő, nem követett. Ez egy emlékeztető.
+                                        Senkisem - Nem egy brand. Üzenet.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://signaler.hu">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./image/signaler.png" alt="Signaler" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">signaler.hu</p>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Signaler</h3>
+
+                                    <p class="blog-text">
+                                        Ne maradj le a piac mozgásairól! Iratkozz fel prémium TradingView indikátorunkra, és kapj pontos buy/sell jelzéseket valós időben.
+                                        Különleges Ajánlat Csak az Első 500 Regisztrálónak! 🎁
+                                        Ez nem egy átmeneti próbaidőszak! Ha az első 500 regisztráló között vagy, akkor a Signaler prémium indikátorai örökre INGYENESEN a tiéd maradnak!
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://linkfluencer.hu">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./image/linkfluencer.png" alt="Linkfluencer" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">linkfluencer.hu</p>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Linkfluencer</h3>
+
+                                    <p class="blog-text">
+                                        Növeld eladásaidat influenszerekkel!
+                                        Érd el új vevőket és bővítsd piacodat hatékony affiliate marketinggel. Kezeld partnereidet, generálj linkeket, és kövesd nyomon az eladásokat egy helyen, egyszerűen.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://codezra.hu">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./image/codezra.png" alt="codezra" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">codezra.hu</p>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title"> CodEzra </h3>
+
+                                                                        <p class="blog-text">
+                                        Alakítsa át digitális vízióját!
+                                        Lenyűgöző weboldalakat és digitális élményeket hozok létre, amelyek magukkal ragadják közönségét és eredményeket generálnak.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+            <article class="contact active" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Kapcsolat</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox="">
+<figure class="contact-hero-figure">
+    <img src="./image/bze2.png" alt="Kapcsolat - Bellér Zoltán Ezra" loading="lazy" class="contact-hero-img">
+</figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Írj üzenetet</h3>
+
+                    <form action="#" class="form" data-form="">
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Teljes név" required="" data-form-input="">
+
+                            <input type="email" name="email" class="form-input" placeholder="E-mail cím" required="" data-form-input="">
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Üzenet" required="" data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" data-form-btn="">
+                            <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
+                            <span>Üzenet küldése</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // Handle form submission
+        document.querySelector('[data-form]').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const emailInput = document.querySelector('input[name="email"]').value;
+            const messageInput = document.querySelector('textarea[name="message"]').value;
+            const subject = encodeURIComponent('Portfolio Contact Message');
+            const body = encodeURIComponent(`From: ${emailInput}\n\nMessage: ${messageInput}`);
+
+            // Open mail client with recipient as bellerzoltanezra@gmail.com
+            window.location.href = `mailto:bellerzoltanezra@gmail.com?subject=${subject}&body=${body}`;
+
             
-                <div class="services-box">
-                    <i class='bx bxs-t-shirt'></i>
-                    <h3> Senkisem </h3>
-                    <p>Egyedi ruhamárka, ahol a design, marketing és a fejlesztés teljes folyamata saját irányítás alatt zajlik. A márka célja az önkifejezés és vizuális minőség.
-                        </p>
-                    <a href="https://senkisem.onrender.com"class="btn">Megtekintés</a>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio" id="portfolio">
-            <div class="about-content">
-              <h2 class="heading"><span>Tapasztalatok</span></h2>
-          
-              <h3 style="color: var(--main-color);">Raiffeisen Bank Zrt – Kockázatkezelő gyakornok</h3>
-              <p>2021 és 2022 között betekintést nyertem a banki kockázatelemzés világába. A gyakornoki pozíció során pénzügyi jelentések értelmezésében, kockázatértékelésben és adatbázis-kezelésben szereztem gyakorlatot.</p>
-          
-              <h3 style="color: var(--main-color);">OVB – Pénzügyi tanácsadó</h3>
-              <p>2022–2023 között pénzügyi tanácsadóként dolgoztam, ahol ügyfélkezelésben, pénzügyi tervezésben és értékesítési stratégiák alkalmazásában mélyítettem tudásomat.</p>
-          
-              <h3 style="color: var(--main-color);">OMSZ és ORFK – Egészségügyi és rendészeti munka</h3>
-              <p>2023-ban az Országos Mentőszolgálatnál PCR teszterként és a Rendőrségnél Őrmester rendfokozatban szolgáltam. Ezekben a szerepkörökben első kézből tapasztaltam meg a krízishelyzetek kezelését, gyors döntéshozatalt és az emberi tényezők fontosságát.</p>
-          
-              <h3 style="color: var(--main-color);">SilkRoad Models Agency LLC & Millions Agency Kft – Menedzser és Traffic Manager</h3>
-              <p>2024-től menedzserként a Magyar leányvállalatuknál, majd már a Social Media Marketing-el foglalkozó Amerikai cégnél dolgoztam Traffic Manager pozícióban. Főként közösségi média tevékenységben, csapatmenedzsmentben és kreatív irányításban vettem részt, több influencer projektet koordinálva.</p>
-          
-              <h3 style="color: var(--main-color);">Tanulmányok</h3>
-              <p>Tanulmányaimat a Debreceni Egyetemen folytattam egészségügyi szervező szakon. Habár az egyetemi tanulmányaim szüneteltetem 2024 óta, mégis számos szakmai készségre és tudásra tettem szert Egyetemi éveim alatt.</p>
-            </div>
-          </section>
-        <section class="contact"id="contact">
-            <h2 class="heading">Kapcsolat<span></span></h2>
+            alert('Üzenet elküldve!');
 
-            <form action="https://formsubmit.co/bellerzoltanezra@gmail.com" method="POST">
-                <div class="input-box">
-                    <input type="text" name="TeljesNev" placeholder="Teljes név">
-                    <input type="email" name="EmailCim" placeholder="Email cím">
-                </div>
-                <div class="input-box">
-                    <input type="number" name="Telefonszam" placeholder="Telefonszám">
-                    <input type="text" name="Targy" placeholder="Tárgy">
-                </div>
-                <textarea name="Uzenet" cols="30" rows="10" placeholder="Üzenet"></textarea>
-                <input type="submit" value="Üzenet küldése" class="btn">
-            </form>
-            <span id="msg"></span>
-        </section>
+            
+            this.reset();
+        });
 
-
-        <footer class="footer">
-            <div class="footer-text">
-                <p> &copy; 2025 - Bellér Zoltán Ezra | Minden Jog Fenntartva.</p>
-            </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-            </div>
-        </footer>
-
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="script.js"></script>
         
-    </body>
+        const navigationLinks = document.querySelectorAll('[data-nav-link]');
+        const pages = document.querySelectorAll('[data-page]');
+
+        navigationLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const targetPage = this.getAttribute('data-nav-link');
+
+                pages.forEach(page => {
+                    if (page.getAttribute('data-page') === targetPage) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+
+                navigationLinks.forEach(navLink => {
+                    if (navLink === this) {
+                        navLink.classList.add('active');
+                    } else {
+                        navLink.classList.remove('active');
+                    }
+                });
+
+                
+                const sidebar = document.querySelector('[data-sidebar]');
+                if (sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+
+        
+        const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+        const sidebar = document.querySelector('[data-sidebar]');
+
+        sidebarBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+
+    </script>
+</body>
 </html>
