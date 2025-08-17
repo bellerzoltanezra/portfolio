@@ -664,25 +664,6 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script>
-        // Handle form submission
-        document.querySelector('[data-form]').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const emailInput = document.querySelector('input[name="email"]').value;
-            const messageInput = document.querySelector('textarea[name="message"]').value;
-            const subject = encodeURIComponent('Portfolio Contact Message');
-            const body = encodeURIComponent(`From: ${emailInput}\n\nMessage: ${messageInput}`);
-
-            // Open mail client with recipient as bellerzoltanezra@gmail.com
-            window.location.href = `mailto:bellerzoltanezra@gmail.com?subject=${subject}&body=${body}`;
-
-            
-            alert('Üzenet elküldve!');
-
-            
-            this.reset();
-        });
-
         
         const navigationLinks = document.querySelectorAll('[data-nav-link]');
         const pages = document.querySelectorAll('[data-page]');
