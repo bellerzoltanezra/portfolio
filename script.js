@@ -54,34 +54,41 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
     }
 
     // contact form variables
-    const form = document.querySelector("[data-form]");
-    const formInputs = document.querySelectorAll("[data-form-input]");
-    const formBtn = document.querySelector("[data-form-btn]");
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
 
-    if (form && formInputs.length > 0 && formBtn) {
-        for (let i = 0; i < formInputs.length; i++) {
-            formInputs[i].addEventListener("input", function () {
-                if (form.checkValidity()) {
-                    formBtn.removeAttribute("disabled");
-                } else {
-                    formBtn.setAttribute("disabled", "");
-                }
-            });
-        }
-
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-            const fullname = form.querySelector("[name='fullname']").value;
-            const email = form.querySelector("[name='email']").value;
-            const message = form.querySelector("[name='message']").value;
-            const subject = "New Message from Portfolio Contact Form";
-            const body = `Name: ${fullname}\nEmail: ${email}\nMessage: ${message}`;
-            const mailtoLink = `mailto:bellerzoltanezra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
-            form.reset();
-            formBtn.setAttribute("disabled", "");
+if (form && formInputs.length > 0 && formBtn) {
+    // Érvényességi ellenőrzés
+    for (let i = 0; i < formInputs.length; i++) {
+        formInputs[i].addEventListener("input", function () {
+            if (form.checkValidity()) {
+                formBtn.removeAttribute("disabled");
+            } else {
+                formBtn.setAttribute("disabled", "");
+            }
         });
     }
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        formBtn.innerHTML = "Küldés...";
+        formBtn.setAttribute("disabled", "true");
+
+        emailjs.sendForm('service_9jnlmve', 'template_130u7qj', this)
+            .then(() => {
+                alert('Az üzenet sikeresen elküldve!');
+                form.reset();
+                formBtn.removeAttribute("disabled");
+                formBtn.innerHTML = '<ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon><span>Üzenet küldése</span>';
+            }, (error) => {
+                console.log(error);
+                alert('Hiba történt az üzenet küldésekor: ' + JSON.stringify(error));
+                formBtn.removeAttribute("disabled");
+                formBtn.innerHTML = '<ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon><span>Üzenet küldése</span>';
+            });
+    });
+}
 
     // page navigation variables
     const navigationLinks = document.querySelectorAll("[data-nav-link]");

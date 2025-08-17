@@ -12,6 +12,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // A te felhasználói azonosítód (Public Key)
+            emailjs.init('p3RsERzsH9ojr0A_D'); 
+        })();
+    </script>
+</head>
+...
+<article class="contact active" data-page="contact">
+    <header>
+        <h2 class="h2 article-title">Kapcsolat</h2>
+    </header>
+
+    <section class="mapbox" data-mapbox="">
+        <figure class="contact-hero-figure">
+            <img src="./image/bze2.png" alt="Kapcsolat - Bellér Zoltán Ezra" loading="lazy" class="contact-hero-img">
+        </figure>
+    </section>
+
+    <section class="contact-form">
+        <h3 class="h3 form-title">Írj üzenetet</h3>
+        <form class="form" data-form="">
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Teljes név" required="" data-form-input="">
+                <input type="email" name="email" class="form-input" placeholder="E-mail cím" required="" data-form-input="">
+            </div>
+            <textarea name="message" class="form-input" placeholder="Üzenet" required="" data-form-input=""></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn="">
+                <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
+                <span>Üzenet küldése</span>
+            </button>
+        </form>
+    </section>
+</article>
 </head>
 
 <body>
