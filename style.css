@@ -1770,3 +1770,17 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0; /* Alapértelmezett marginok eltávolítása, ha vannak */
     /* ... egyéb stílusok a figure-höz, ha szükséges ... */
 }
+
+
+.service-icon-box {
+  margin-bottom: 10px;
+  color: var(--orange-yellow-crayola);
+  background: var(--text-gradient-yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-icon-box ion-icon {
+  font-size: 24px;
+}
