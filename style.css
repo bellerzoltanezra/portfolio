@@ -1451,13 +1451,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 16px;
-    margin: 16px 0;
+    padding: 6px 12px;
+    margin: 12px 0 0 0;
     background: var(--border-gradient-onyx);
-    border-radius: 14px;
+    border-radius: 12px;
     text-decoration: none;
     color: var(--white-2);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     transition: all 0.25s ease;
 }
@@ -1470,8 +1470,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 .language-switcher img {
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 20px;
+    height: auto;
 }
 
 .language-switcher span {
     letter-spacing: 0.5px;
+}
+
+/* Mobil nézet fix */
+@media (max-width: 580px) {
+    .language-switcher {
+        padding: 5px 10px;
+        margin: 10px 0 0 0;
+        font-size: 12px;
+        border-radius: 10px;
+        gap: 6px;
+    }
+    
+    .language-switcher img {
+        width: 18px;
+    }
 }
