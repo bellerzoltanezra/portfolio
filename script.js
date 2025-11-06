@@ -144,3 +144,35 @@ if (form && formInputs.length > 0 && formBtn) {
         });
     }
 });
+
+
+(function() {
+    const container = document.getElementById('starsContainer');
+    const starCount = window.innerWidth < 768 ? 50 : 100;
+    
+    // Alap csillagok generálása
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.className = `star ${['small', 'medium', 'large'][Math.floor(Math.random() * 3)]}`;
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.setProperty('--duration', (2 + Math.random() * 3) + 's');
+        star.style.setProperty('--opacity', (0.3 + Math.random() * 0.7));
+        star.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(star);
+    }
+    
+    // Hulló csillag random időközönként
+    function createShootingStar() {
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        shootingStar.style.left = Math.random() * 50 + '%';
+        shootingStar.style.top = Math.random() * 50 + '%';
+        container.appendChild(shootingStar);
+        
+        setTimeout(() => shootingStar.remove(), 3000);
+        setTimeout(createShootingStar, 8000 + Math.random() * 10000);
+    }
+    
+    createShootingStar();
+})();
