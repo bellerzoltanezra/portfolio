@@ -1582,3 +1582,56 @@ textarea.form-input::-webkit-resizer { display: none; }
         width: 18px;
     }
 }
+
+.download-section {
+    margin: 30px 0;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: var(--bg-gradient-onyx);
+    border: 1px solid var(--jet);
+    border-radius: 14px;
+    color: var(--white-2);
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: var(--bg-gradient-jet);
+    border-color: var(--orange-yellow-crayola);
+    transform: translateY(-2px);
+}
+
+.download-btn ion-icon {
+    font-size: 24px;
+    color: var(--orange-yellow-crayola);
+}
+
+.download-btn span {
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+}
+
+@media (max-width: 580px) {
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    .download-btn {
+        min-width: 100%;
+    }
+}
